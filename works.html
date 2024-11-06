@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Works</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <header>
+            <h1><a href="index.html"><img src="Images/DuchampLogo.png" alt="Website Logo" class="logo"></a></h1>
+        </header>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bio.html">Biography</a></li>
+                        <li><a href="works.html"> Works</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/groups/344424405578265" target="_blank">
+                        <img src="Images/facebook.png" alt="social">
+                      </a>
+                      <a href="https://www.instagram.com/marcel_duchamp1887/" target="_blank">
+                        <img src="Images/instagram.png" alt="social">
+                      </a>
+                </div>
+    </div>
+
+    </section>
+
+    <div class="hero">
+        <img src="Images/Duchamp.jpg" alt="Hero Image">
+    </div>
+
+    <div class="works-para">
+       <div class="readymade">
+            <img src="Images/readymade2.png" alt="readymade1">
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="Images/BicycleWheel.png" style="width:100%">
+                <div class="text"><i>Bicycle Wheel</i> - New York, 1951 <br>
+                        <span style="font-size: 20px;">“To see that wheel turning,” he once remarked, “was very soothing,
+                        very comforting, a sort of opening of avenues on other things than material life of every day. I
+                        liked the idea of having a bicycle wheel in my studio. I enjoyed looking at it, just as I
+                        enjoyed looking at the flames dancing in a fireplace. It was like having a fireplace in my
+                        studio.”</span>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="Images/broken.jpg" style="width:100%">
+                <div class="text"><i>In Advance of the Broken Arm - Yale University, 1915</i><br>
+                    <span style="font-size: 20px;">Duchamp acquired the initial version of this piece from a hardware
+                        store in 1915. He signed and dated the shovel before suspending it from the ceiling of his
+                        studio for display. The title, <i>In Advance of the Broken Arm</i>, humorously references the
+                        shovel's intended use.</span>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="Images/Fountain.png" style="width:100%">
+                <div class="text"><i>Fountain - Tate Modern, 1917</i> <br>
+                    <span style="font-size: 20px;">On his journey of protesting traditional art, Duchamp submitted an
+                        upside-down urinal titled <i>Fountain</i>, signed “R. Mutt, 1917,” to the unjuried Society of
+                        Independent Artists’ salon in New York, which promised to accept any artwork with a paid fee.
+                        The board, suspecting a prank, rejected <i>Fountain</i> as not being true art. In response,
+                        Duchamp, a board member, resigned in protest.</span>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="Images/trebuchet.jpg" style="width:100%">
+                <div class="text"><i>Trebuchet ("Trap") - Center Pompidou - 1917/1964</i> <br>
+                    <span style="font-size: 20px;">"lt stayed there on the floor and I would always knock against it at every moment. lt drove me mad and I said to myself : l've had enough of this; if it wants to stay on the floor, all right, l'm going to nail it''.</span>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="Images/bottle.jpg" style="width:100%">
+                <div class="text"><i>Bottle Rack - The Art Institute of Chicago, 1914/1959</i> <br>
+                    <span style="font-size: 20px;">Marcel Duchamp transformed an ordinary, mass-produced bottle rack into an artwork by designating it as such. Known as <i>Bottle Rack</i>, its original function was redefined by Duchamp's act of selection. When he moved to New York in 1915, he left the piece with his sister, who had discarded it by the time Duchamp later requested it. However, the concept behind <i>Bottle Rack</i> persisted, as its status as a ready-made inherently questioned originality due to its industrial production. Duchamp subsequently acquired and authorized new versions of the work.</span>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        </section>
+
+    <footer>
+        <p>&copy; Marcel Duchamp. All rights reserved.</p>        
+    </footer>
+
+</body>
+
+</html>
