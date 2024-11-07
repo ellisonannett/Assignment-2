@@ -7,8 +7,9 @@ html {
   min-height: 100vh;
   margin: 10;
 }
+
 body {
-  font-family: 'Rethink Sans', sans-serif; 
+  font-family: 'Rethink Sans', sans-serif;
 }
 
 
@@ -72,7 +73,7 @@ nav a:active {
 }
 
 
-h1 img{
+h1 img {
   width: 150px;
   height: auto;
   max-width: 100%;
@@ -85,15 +86,14 @@ h2 {
 }
 
 h3 {
-  font-family:'Rethink Sans', sans-serif;
+  font-family: 'Rethink Sans', sans-serif;
   font-size: 50px;
   padding-top: 80px;
-  text-align: center; 
+  text-align: center;
   display: block;
-  width: fit-content; 
-  margin: 0 auto; 
+  width: fit-content;
+  margin: 0 auto;
   color: #868b77
-
 }
 
 h5 {
@@ -168,7 +168,7 @@ nav ul li {
   margin: auto;
 }
 
-.slideshow-container img{
+.slideshow-container img {
   border-radius: 15px;
 
 }
@@ -206,13 +206,13 @@ nav ul li {
 
 .text {
   color: black;
-  font-size: 33px;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 15px;
   width: 100%;
   text-align: center;
-  line-height: .75;
+  line-height: 30px;
 }
 
 .numbertext {
@@ -268,7 +268,7 @@ nav ul li {
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
+
 }
 
 .form-img img {
@@ -276,6 +276,7 @@ nav ul li {
   height: 100%;
   object-fit: cover;
 }
+
 .readymade img {
   width: 95%;
   height: auto;
@@ -315,6 +316,9 @@ nav ul li {
 }
 
 .home-image-container {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -365,46 +369,53 @@ button {
 button:hover {
   background-color: #ddb0a0;
 }
+
 .yesno {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-  footer {
-    font-size: 20px;
-    text-align: center;
-  }
+footer {
+  font-size: 20px;
+  text-align: center;
+}
 
 @media screen and (max-width: 580px) {
 
-  h3{
+  h3 {
 
     font-size: 20px;
   }
-  .para-text{
-font-size: 20px;
+
+  .para-text {
+    font-size: 20px;
   }
 
-  .home-image-container{
-    width: 80%;
-    height: 5%px;
+  .home-image-container {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
 
   }
 
 
-  .bio-text{
-font-size: 15px;
+  .bio-text {
+    font-size: 10px;
+    padding: 5px;
 
   }
-  .bio-container{
-    width: 80%;
-    height: 5%px;
+
+  .bio-container {
+    width: 100%;
+    height: auto;
   }
 
 }
+
 @media screen and (max-width: 580px) {
-  .slideshow-container{
+  .slideshow-container {
     font-size: 10px;
     width: 60%;
     height: 5%px;
@@ -412,34 +423,49 @@ font-size: 15px;
   }
 }
 
-@media screen and (max-width: 580px){
-h5{
-font-size: 20px;
-.Hero Image1{
-  width: 60%;
-  height: 5%px;
+@media screen and (max-width: 580px) {
+  h5 {
+    font-size: 20px;
+
+    .Hero Image1 {
+      width: 60%;
+      height: 5%px;
+
+    }
+
+  }
 
 }
 
-}
-
-}
-
-@media screen and (max-width: 580px){
+@media screen and (max-width: 580px) {
 
   .readymade img {
-    width: 50%;
+    width: 90%;
     height: auto;
   }
-  .text{
+
+  .text {
     color: black;
-    font-size: 33px;
+    font-size: 7px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 15px;
+    bottom: px;
     width: 100%;
     text-align: center;
-    line-height: .75
+    line-height: 10px;
+
+  }
+
+  .text2 {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .slideshow-container {}
+
+  footer {
+    font-size: 10px;
+    text-align: center;
   }
 
 }
